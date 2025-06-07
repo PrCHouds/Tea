@@ -1,0 +1,10 @@
+.slider-item {
+    min-height: 500px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-item:first-child {
+    background-image: url('images/banner1.png'); /* Убедись, что путь правильный */
+}

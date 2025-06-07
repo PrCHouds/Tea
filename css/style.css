@@ -1,0 +1,44 @@
+
+.container .arrows {
+    position: relative;
+}
+
+.slider-item {
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-elements {
+    margin: 0 122px;
+}
+
+#slider-item1 {
+    background-image: url('../images/banner1.png');
+}
+
+#slider-item2 {
+    background-image: url("../images/banner2.png");
+}
+
+
+#slider-item3 {
+    background-image: url("../images/banner3.png");
+}
+
+.ui-accordion .ui-icon {
+    display: none;
+}
+
+.accordion-icon {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+}
+
+.accordion-icon.up {
+    transform: rotate(180deg);
+}
+
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+    <link href="css/hover-min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+
+
+<header class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="page" href="#">Преимущества</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link disabled" aria-current="page" href="#">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Контакты</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary hvr-bounce-out" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="slider py-5">
+    <div class="container">
+        <div class="arrows wow animate__slideInLeft">
+            <button id="prevSlide" class="slider-arrow prev">&#10094;</button>
+            <div class="slider-items">
+                <div class="slider-item" id="slider-item1">
+                    <div class="slider-elements">
+                        <div class="h1 fw-bold">
+                            Скидки на травянные чаи
+                        </div>
+                        <div class="mb-5">
+                            Узнай все подробности, заполнив заявку
+                        </div>
+                        <button class="btn btn-primary px-5 hvr-hang mb-lg-5">Заполнить</button>
+                    </div>
+                </div>
+                <div class="slider-item" id="slider-item2">
+                    <div class="slider-elements">
+                        <div class="h1 mb-5 w-75 fw-bold">
+                            Закажи три пачки чая и получи подарок
+                        </div>
+                        <button class="btn btn-primary px-5 hvr-hang">Заказать</button>
+                    </div>
+                </div>
+                <div class="slider-item" id="slider-item3">
+                    <div class="slider-elements">
+                        <div class="h1 mb-5 w-75 fw-bold ">
+                            Попробуй нашу новинку — ягодный чай
+                        </div>
+                        <button class="btn btn-primary px-5 hvr-hang">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <button id="nextSlide" class="slider-arrow next">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+<section class="cards py-2 pb-5">
+    <div class="container">
+        <div class="h2 text-center fw-bold mt-5 mb-5 wow animate__zoomIn">
+            Наши чайные коллекции
+        </div>
+        <div class="row">
+            <div class="col-sm-4  mb-4 wow animate__backInLeft">
+                <div class="card">
+                    <a href="images/card-big.png" data-lightbox="image-1">
+                        <img src="images/card1.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Детокс чай лайм</h5>
+                        <p class="card-text">Великолепный чай внесет в вашу жизнь яркие краски и вкус расслабления</p>
+                        <a href="#" class="btn btn-primary hvr-round-corners">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4 wow animate__zoomIn">
+                <div class="card">
+                    <a href="images/card2-big.png" data-lightbox="image-1">
+                        <img src="images/card2.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ягодный чай</h5>
+                        <p class="card-text">Нотки ягод позволят вам расслабиться и насладиться великолепием этого
+                            чая</p>
+                        <a href="#" class="btn btn-primary hvr-round-corners">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4 wow animate__backInRight">
+                <div class="card">
+                    <a href="images/card3-big.png" data-lightbox="image-1">
+                        <img src="images/card3.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Цветочный чай</h5>
+                        <p class="card-text">Душистые цветы создают невероятный аромат и наполняют вас энергией</p>
+                        <a href="#" class="btn btn-primary hvr-round-corners">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-4  mb-4 wow animate__backInLeft">
+                <div class="card">
+                    <a href="images/card4-big.png" data-lightbox="image-1">
+                        <img src="images/card4.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Очищающий чай</h5>
+                        <p class="card-text">Бесподобный чай для получения утреннего заряда бодрости</p>
+                        <a href="#" class="btn btn-primary hvr-round-corners">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+                <div class="card wow animate__zoomIn">
+                    <a href="images/card5-big.png" data-lightbox="image-1">
+                        <img src="images/card5.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Кислый чай</h5>
+                        <p class="card-text w-75">Кислый чай для настоящих ценителей кислинки во время чаепития</p>
+                        <a href="#" class="btn btn-primary hvr-round-corners">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4  mb-4 wow animate__backInRight">
+                <div class="card">
+                    <a href="images/card6-big.png" data-lightbox="image-1">
+                        <img src="images/card6.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Лимонная мята</h5>
+                        <p class="card-text w-75">Смесь лимона с мятой сделает ваш день самым лучшим</p>
+                        <a href="#" class="btn btn-primary hvr-round-corners">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="questions py-2 pb-5">
+    <div class="container">
+        <div class="h2 text-center fw-bold mb-4 wow animate__pulse">
+            Ответы на часто задаваемые вопросы
+        </div>
+
+        <div id="accordion" class="w-75 m-auto pt-5">
+            <h3 class="mb-4 bg-primary rounded text-white py-4 fw-bold">
+                <svg class="accordion-icon up" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_16_15)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_16_15">
+                            <rect width="20" height="20" fill="white" transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="w-75 m-0">Собираете ли вы подарочные боксы?</p>
+            </h3>
+            <div class="py-2 border-0">
+                <p>
+                    Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+                </p>
+            </div>
+            <h3 class="mb-4 bg-primary rounded text-white py-4 fw-bold">
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_16_15)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_16_15">
+                            <rect width="20" height="20" fill="white" transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="w-75 m-0">Сколько у вас разновидностей чая?</p></h3>
+            <div class="py-2 border-0">
+                <p>
+                    Многа
+                </p>
+            </div>
+            <h3 class="mb-4 bg-primary rounded text-white py-4 fw-bold">
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_16_15)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_16_15">
+                            <rect width="20" height="20" fill="white" transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="w-75 m-0">В какой срок осуществляется доставка? </p> </h3>
+            <div class="py-2 border-0">
+                <p>
+                    До 2-х недель
+                </p>
+            </div>
+            <h3 class="mb-4 bg-primary rounded text-white py-4 fw-bold">
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_16_15)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_16_15">
+                            <rect width="20" height="20" fill="white" transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="w-75 m-0">У вас обновляется ассортимент?</p></h3>
+            <div class="py-2 border-0">
+                <p>
+                    Конечно
+                </p>
+            </div>
+            <h3 class="mb-4 bg-primary rounded text-white py-4 fw-bold">
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_16_15)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_16_15">
+                            <rect width="20" height="20" fill="white" transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="w-75 m-0">Какого объема у вас пачки чая?</p></h3>
+            <div class="py-2 border-0">
+                <p>
+                    Большого
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form-block">
+    <div class="w-50 m-auto">
+        <div class="h2 text-center fw-bold mb-4">
+            Сделать заказ
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col wow animate__fadeInLeftBig animate__delay-0.3s">
+                <label class="form-label">Имя</label>
+                <input type="text" class="form-control check" id="input-name">
+            </div>
+            <div class="col wow animate__fadeInDownBig animate__delay-0.8s">
+                <label class="form-label">Фамилия</label>
+                <input type="text" class="form-control check" id="input-surname">
+            </div>
+            <div class="col wow animate__fadeInDownBig animate__delay-0.8s">
+                <label class="form-label">Телефон</label>
+                <input type="text" class="form-control check" id="input-phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col wow animate__fadeInLeftBig animate__delay-0.3s">
+                <label class="form-label">Страна</label>
+                <input type="text" class="form-control check" id="input-country">
+            </div>
+            <div class="col wow animate__fadeInDownBig animate__delay-0.7s">
+                <label class="form-label">Индекс</label>
+                <input type="text" class="form-control check" id="input-index">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col wow animate__fadeInLeftBig animate__delay-0.3s">
+                <label class="form-label ">Адрес</label>
+                <input type="text" class="form-control check" id="input-address">
+            </div>
+        </div>
+        <button type="button" class="form-button wow animate__pulse animate__delay-1s form-btn btn btn-primary my-4 px-4 hvr-wobble-vertical">
+            Отправить
+        </button>
+    </div>
+</section>
+
+<div class="d-none text-center h2 fw-bold m-5 p-5 border-5" id="after-form-text">
+    Спасибо за заказ. Мы свяжемся с вами в ближайшее время!
+</div>
+
+<header class="bg-light p-4">
+    <div class="container-fluid">
+        <div class="text-body-secondary">
+            Все права защищены
+        </div>
+    </div>
+</header>
+
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="lightbox/lightbox.js"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
+
+
